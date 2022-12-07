@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #141519;
+}
+
+h1 {
+    color: white;
+    font-weight: 500;
+}
+
+p {
+    color: #606771;
+}
+
+i {
+    color: #f87817;
+    background: rgba(255, 255, 255, 0.11);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+    border-radius: 55%;
+    transition: all 0.3s;
+    background: #272e38;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #f87817;
+    color: white;
+}
+
+
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    margin: 0 auto;
+    background: #1b222c;
+    padding: 40px;
+    border-radius: 30px;
+
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.text p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 15px 0;
+    background: #f87817;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: white;
+    color: #f87817;
+}
+
+@media (max-width: 800px) {
+    .card {
+        max-width: 200px;
+    }
+
+    i {
+        font-size: 10px;
+    }
+    h1 {
+       font-size: 15px; 
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+}
