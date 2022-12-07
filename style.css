@@ -21,10 +21,16 @@ p {
 }
 
 i {
-    color: #f87817;
+    color: white;
+    font-size: 20px;
     background: rgba(255, 255, 255, 0.11);
     padding: 20px;
     border-radius: 50%;
+    transition: all  0.3s ;
+}
+
+i:hover {
+    cursor: pointer;
 }
 
 button {
@@ -44,6 +50,25 @@ button:hover {
     cursor: pointer;
     background: #f87817;
     color: white;
+}
+
+.star {
+    color: #f87817;
+    animation-name: favorite;
+    animation-duration: 1s;
+}
+
+@keyframes favorite {
+    0% {
+
+    }
+    25% {
+        font-size: 25px;
+
+    }
+    100% {
+        font-size: 20px;
+    }
 }
 
 
@@ -96,6 +121,7 @@ button:hover {
 
 @media (max-width: 800px) {
   
+   
 
     i {
         font-size: 10px;
